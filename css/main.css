@@ -483,14 +483,14 @@
 
 
     .titulo-siguiente-contenedor{
-        margin-right: -5.2rem;
+        margin-right:  -5.2rem;
         height: 130vh;
     }
     .redes-contenedor{
         width: 220%;
     }
     .boton-titulo-siguente{
-        margin-left: -1rem;
+        margin-left: -3rem;
     }
     .redes-contenedor svg{
         margin-left: 0.5rem;
