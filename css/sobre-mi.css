@@ -792,6 +792,13 @@
 }
 }
 
+@media (max-width: 500px){
+    .boton-cerrar-cuadro{
+        top: -20%;
+        left: 65%;
+    }
+}
+
 
 @media (max-width: 350px){
     .titulo-sobre-mi{
@@ -802,6 +809,19 @@
         right: -5%;
         top: -6%;
         left: auto;
+    }
+    .bullet-cuadro{
+        width: 60%;
+        height: 60%;
+        margin-top: 2rem;
+    }
+    .bullet-cuadro p:nth-child(2){
+        font-size: 1.5rem;
+        margin: 0;
+    }
+    .boton-cerrar-cuadro {
+        left: 60%;
+        top: -15%;
     }
 
     .contenedor-linea-de-tiempo{

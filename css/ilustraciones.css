@@ -398,7 +398,10 @@
 @media (max-width: 400px){
     .ilustraciones-grid-contenedor{
         margin-left: 10vw;
+        width: 12rem;
+        height: 24rem;
     }
+    
 
     .titulo-siguiente-contenedor{
         transform: scale(0.3);
@@ -417,9 +420,11 @@
 @media (max-width: 350px){
     .ilustraciones-grid-contenedor{
         margin-left: 5vw;
+
     }
     .titulo-siguiente-contenedor{
-        margin-right: -5.2rem;
+        margin-right: -4.2rem;
+        height: 130vh;
     }
     .boton-titulo-siguente{
         margin-left: 0rem;

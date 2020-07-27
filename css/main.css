@@ -12,6 +12,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
 /* Abrir comentarios cuando se termine
 
 .contenedor{
@@ -469,8 +471,20 @@
 }
 
 @media (max-width: 350px){
+    .titulo-inicio{
+        margin-top: -2rem;
+    }
+    .titulo-inicio p{
+        width: 130%;
+    }
+    .coco-flecha img{
+        width: 70vw;
+    }
+
+
     .titulo-siguiente-contenedor{
         margin-right: -5.2rem;
+        height: 130vh;
     }
     .redes-contenedor{
         width: 220%;

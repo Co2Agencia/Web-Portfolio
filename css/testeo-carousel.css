@@ -428,8 +428,17 @@ body{
 
 
 @media (max-width: 350px){
+    .carousel-contenedor{
+        margin-top: -5rem;
+    } 
+    .fondo-swiper{
+        top: 51%;
+        left: 25%;
+    }
+
     .titulo-siguiente-contenedor{
-        margin-right: -5.2rem;
+        margin-right: -4.2rem;
+        height: 130vh;
     }
     .boton-titulo-siguente{
         margin-left: 0rem;
