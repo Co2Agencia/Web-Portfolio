@@ -1,0 +1,246 @@
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+
+:root{
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    --primal-color: #eeeded;
+    --primal-black-color: #131313;
+    --secondary-black-color: #2c2c2c;
+    --primal-link-color: #1B92AC;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+
+/* Generales de Nav */
+#nav{
+    position: fixed;
+    z-index: 98;
+    top: 0;
+    left: 0;
+}
+
+
+/* Nav Bar */
+.nav-icon-wrapper{
+    width: 100vw;
+    height: 6rem;
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+
+.nav-icon-wrapper #nav-icon{
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem;
+    margin-left: 3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1);
+    position: relative;
+}
+
+.palo1, .palo2{
+    width: 4rem !important;
+    height: 0.6rem;
+    background-color: var(--primal-black-color);
+    position: absolute;
+}
+
+.palo1{
+    margin-top: 1.2rem;
+}
+
+.palo2{
+    margin-top: -1.2rem;
+}
+
+.navLogoBtn{
+    display: flex;
+    justify-content: center;
+    margin-left: 42%;
+}
+
+.nav-logo{
+    fill: var(--primal-black-color);
+    width: 5.5rem;
+    margin-right: 5%;
+}
+
+
+/* Titles */
+
+
+.titles, .principalTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    color: var(--primal-black-color);
+    padding-top: 5rem;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 2rem;
+    background-color: rgb(255, 255, 255, 0.75);
+}
+
+
+.titles{
+    padding: 0;
+}
+
+
+
+.principalTitle li{
+    list-style: none;
+    margin: 3rem 0;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 4rem;
+    border-bottom: 2px solid var(--primal-black-color);
+    display: flex;
+    justify-content: center;
+    width: 70px;
+}
+
+.titles li:hover{
+    transform: scale(1.2);
+    transform: skewY(1deg);
+    transition: ease 0.2s;
+    width: 30%;
+    border: 2px var(--primal-black-color) solid;
+}
+
+/* Servicios titles */
+
+
+
+#servicios{
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    color: var(--primal-black-color);
+    padding-top: 5rem;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0 0 12rem 0;
+    background-color: rgb(255, 255, 255, 0.75);
+    display: none;
+}
+
+
+#servicios li{
+    font-size: 3rem;
+    list-style: none;
+    margin: 3rem 0;
+    cursor: pointer;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 55px;
+}
+
+#servicios li:hover{
+    border: none;
+}
+
+#principalServicios{
+    display: block;
+    margin-left: 3rem;
+}
+
+#retrocederServicios{
+    display: none;
+}
+
+#nav li a{
+    color: var(--primal-black-color);
+    text-decoration: none;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 700px){
+    .nav-logo{
+        margin-left: -8vw !important;
+    }
+}
+
+
+@media (max-width: 650px){
+    /* General Titles */
+    .principalTitle li{
+        font-size: 2.5rem;
+    }
+    .titles li:hover{
+        width: 50%;
+    }
+
+    /* Services Titles */
+    #servicios{
+        padding-bottom: -20rem;
+    }
+    #servicios li{
+        padding: 0;
+        margin: 2.5rem 0;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 500px){
+    .nav-logo{
+        display: none;
+    }
+    .nav-icon-wrapper #nav-icon{
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 450px){
+    .nav-logo{
+        width: 4.5rem;
+        margin-left: -12vw !important;
+    }
+}
+
+@media (max-width: 400px){
+    .nav-logo{
+        margin-left: -15vw !important;
+    }
+    .nav-icon-wrapper #nav-icon{
+        transform: scale(0.6);
+        margin-left: 2rem;
+    }
+
+    .principalTitle li{
+        font-size: 2rem;
+        margin: 1.5rem;
+    } 
+
+    #principalServicios{
+        margin-left: 1.2rem;
+    }
+
+}

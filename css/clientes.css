@@ -1,0 +1,339 @@
+:root{
+    --primal-gradient-color: linear-gradient(90deg, rgba(0,0,0,1) -150%, #ffffff 15%);
+    --primal-pink-color: #ef49f4;
+    --primal-pink-gradient-color: linear-gradient(to right, rgba(255,187,0,1) 0%, rgba(239,73,244,1) 100%);
+}
+
+.contenedor-general-clientes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* Inicio Clientes */
+
+.contenedor-clientes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-clientes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "a b c d"
+    "e f g ."
+    "h i j ."
+    "k l . .";
+    gap: 0;
+    width: 45vw;
+    height: 45vw;
+    margin-left: -15vw;
+    z-index: 5;
+}
+
+.grid-clientes div{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    box-shadow: 0px 0px 22px 2px rgba(0,0,0,0.26);
+}
+
+.cliente:active, .cliente:hover{
+    transform: scale(2);
+}
+
+.grid-clientes div:nth-child(1){
+    background-image: url(../img/img-clientes/vonfreak-logo-17.png);
+    grid-area: a;
+}
+
+.grid-clientes div:nth-child(2){
+    background-image: url(../img/img-clientes/birredon-logo-17.png);
+    grid-area: b;
+}
+
+.grid-clientes div:nth-child(3){
+    background-image: url(../img/img-clientes/ypf-logo-17.png);
+    grid-area: c;
+}
+
+.grid-clientes div:nth-child(4){
+    background-image: url(../img/img-clientes/proveedores-logo-17.png);
+    grid-area: d;
+}
+
+.grid-clientes div:nth-child(5){
+    background-image: url(../img/img-clientes/triestina-logo-17.png);
+    grid-area: e;
+}
+
+.grid-clientes div:nth-child(6){
+    background-image: url(../img/img-clientes/thex-logo-17.png);
+    grid-area: f;
+}
+
+.grid-clientes div:nth-child(7){
+    background-image: url(../img/img-clientes/custom-logo-17.png);
+    grid-area: g;
+}
+
+.grid-clientes div:nth-child(8){
+    background-image: url(../img/img-clientes/dasein-logo-17.png);
+    grid-area: h;
+}
+
+.grid-clientes div:nth-child(9){
+    background-image: url(../img/img-clientes/tecnicas-logo-17.png);
+    grid-area: i;
+}
+
+.grid-clientes div:nth-child(10){
+    background-image: url(../img/img-clientes/enjoy-logo-17.png);
+    grid-area: j;
+}
+
+.grid-clientes div:nth-child(11){
+    background-image: url(../img/img-clientes/batelar-logo-17.png);
+    grid-area: k;
+}
+
+
+.titulo-clientes{
+    display: flex;
+    position: absolute;
+    width: 45vw;
+    height: 45vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: -1;
+    left: 25%;
+}
+
+.titulo-clientes p{
+    font-size: 10vw;
+    font-weight: 600;
+    opacity: 0.2;
+    margin: 0;
+}
+
+/* Fin Clientes */
+
+
+/* Boton titulo siguiente */
+
+.boton-titulo-siguente{
+    display: flex ;
+    align-items: center ;
+    justify-content: flex-end ;
+    position: relative;
+    height: 100vh;
+    width: 15rem;
+}
+
+.boton-titulo-siguente a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.titulo-siguiente-contenedor{
+    width: 12rem;
+    height: 100vh;
+    background: var(--primal-gradient-color); 
+    position: relative;
+    top: 0;
+    right: 0;
+    display: flex;
+    text-align: center;
+    border-radius: 5rem 0 0 5rem;
+    align-items: center;
+}
+
+.titulo-siguiente-contenedor h2{
+    font-size: 7rem;
+    font-weight: 600;
+    color: black;
+    transform: rotate(90deg);
+    transform-origin: 12rem;
+    width: 40rem;
+    margin-left: -5rem;
+    margin-top: -9rem;
+}
+
+
+/* Boton Ir para atras */
+.boton-atras{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 90%;
+    left: 1%;
+}
+
+.boton-atras svg{
+    fill: white;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    width: 1rem;
+    height: 1rem;
+    margin: 0 1rem;
+}
+
+
+
+/* Inicio Media Queries */
+@media (min-width: 1600px){
+    .grid-clientes{
+        width: 35vw;
+        height: 35vw;
+    }
+    .titulo-clientes{
+        width: 35vw;
+        height: 35vw;
+        left: 28%;
+    }
+    .titulo-clientes p{
+        font-size: 7vw;
+        font-weight: 600;
+        opacity: 0.2;
+        margin: 0;
+    }
+}
+
+@media (max-width: 900px){
+    .grid-clientes{
+        width: 55vw;
+        height: 55vw;
+    }
+    .titulo-clientes{
+        width: 55vw;
+        height: 55vw;
+        left: 25%;
+    }
+    .titulo-clientes p{
+        font-size: 12vw;
+        font-weight: 600;
+        opacity: 0.2;
+        margin: 0;
+    }
+
+    .boton-titulo-siguente{
+        width: 5rem;
+    }
+    .titulo-siguiente-contenedor{
+        transform: scale(0.4);
+        margin-right: -3.6rem;
+    }
+    .boton-titulo-siguente h2{
+        font-size: 6rem;
+        width: 70rem;
+        margin-top: -40rem;    
+        margin-left: -5rem;
+    }
+}
+
+@media (max-width: 700px){
+    .grid-clientes{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "a b"
+        "d c"
+        "f e"
+        "g h"
+        "j i"
+        "k .";
+        width: 40vw;
+        height: 120vw;
+    }
+    .titulo-clientes{
+        width: 60vw;
+        height: 150vw;
+        left: 18%;
+        justify-content: space-evenly;
+    }
+    .titulo-clientes p{
+        font-size: 20vw;
+        font-weight: 600;
+        opacity: 0.2;
+        margin: 0;
+    }
+
+
+
+    .boton-titulo-siguente{
+        margin-left: -5rem;
+    }
+
+    .boton-atras svg{
+        margin: 0 0.5rem;
+    }
+}
+
+@media (max-width: 560px){
+    .boton-titulo-siguente{
+        margin-right: 0rem;
+        width: 2rem;
+    }
+}
+
+@media (max-width: 500px){
+    .titulo-siguiente-contenedor{
+        transform: scale(0.3);
+        margin-right: -4.5rem;
+        width: 13rem;
+    }
+
+    .titulo-siguiente-contenedor h2{
+        font-size: 5rem;
+        margin-left: -5rem;
+        margin-top: -40rem;
+    }
+    .boton-atras svg{
+        transform: scale(0.8);
+        margin: 0 0rem ;
+    }
+}
+
+@media (max-width: 400px){
+    .titulo-siguiente-contenedor{
+        transform: scale(0.3);
+        margin-right: -4.2rem;
+        width: 12rem;
+    }
+    .titulo-siguiente-contenedor h2{
+        font-size: 5rem;
+        margin-top: -40rem;
+    }
+    .contenedor-fondo-paginas{
+        top: -10%;
+        left: 50.8%;
+        height: 25rem;
+    }
+}
+
+@media (max-width: 350px){
+    .titulo-siguiente-contenedor{
+        margin-right: -5.2rem;
+    }
+    .boton-titulo-siguente{
+        margin-left: 0rem;
+    }
+}
